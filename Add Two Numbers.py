@@ -3,25 +3,12 @@
 # Add the two numbers and return the sum as a linked list.#
 # You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-
-# def addTwoNumbers(l1, l2):
-#     k = 1
-#     rez1 = 0
-#     rez2 = 0
-#     for i in range(len(l1)):
-#         rez1 = rez1 + int(l1[i]) * k
-#         k *= 10
-#     k = 1
-#     for i in l2:
-#         rez2 = rez2 + int(i) * k
-#         k *= 10
-#     rezult = [int(d) for d in str(rez1 + rez2)]
-#     return rezult[::-1]
 
 def addTwoNumbers(l1, l2) -> ListNode:
     """
@@ -45,10 +32,21 @@ def addTwoNumbers(l1, l2) -> ListNode:
     return dummyHead.next
 
 
-w1 = [ListNode(2, 3), ListNode(4), ListNode(3)]
-w2 = [ListNode(5), ListNode(6), ListNode(4)]
-
 # print(addTwoNumbers(w1, w2))
 print(addTwoNumbers([2, 4, 3], [5, 6, 4]))
 # print(addTwoNumbers([0], [0]))
 # print(addTwoNumbers([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]))
+
+# def addTwoNumbers(l1, l2):
+#     k = 1
+#     rez1 = 0
+#     rez2 = 0
+#     for i in range(len(l1)):
+#         rez1 = rez1 + int(l1[i]) * k
+#         k *= 10
+#     k = 1
+#     for i in l2:
+#         rez2 = rez2 + int(i) * k
+#         k *= 10
+#     rezult = [int(d) for d in str(rez1 + rez2)]
+#     return rezult[::-1]
